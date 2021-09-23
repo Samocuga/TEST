@@ -1,6 +1,5 @@
 <template>
-
-<select class="form-control" name="idCursoFK" id="idCursoFK">
+<select  name="idCursoFK" id="idCursoFK">
     <option v-for="Curso in ListaCurso" :key="Curso.idCurso"
      :value="Curso.idCurso">{{Curso.nombreCurso}}
      </option>
@@ -21,7 +20,7 @@ export default {
         
     },
     mounted:function(){
-        let direccion = "http://localhost:5000/api/Curso/";
+        let direccion = "http://localhost:3000/api/CursoRoute";
                 axios.get(direccion).then( data =>{
                 this.ListaCurso = data.data;
                   }); 
