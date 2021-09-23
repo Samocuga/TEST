@@ -4,9 +4,6 @@ import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue';
 import Editar from '../views/Editar.vue';
 import Nuevo from '../views/Nuevo.vue';
-import Inscripcion from '../views/Inscripcion/Inscripcion.vue';
-import InscripcionN from '../views/Inscripcion/NuevoIns.vue';
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -29,16 +26,6 @@ const routes = [
     path: '/nuevo',
     name: 'Nuevo',
     component: Nuevo
-  },
-  {
-    path: '/Inscripcion',
-    name: 'Inscripcion',
-    component: Inscripcion
-  },
-  {
-    path: '/InscripcionN',
-    name: 'InscripcionN',
-    component: InscripcionN
   }
 ]
 

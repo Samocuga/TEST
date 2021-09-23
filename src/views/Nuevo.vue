@@ -13,9 +13,6 @@
               <v-text-field type="date" v-model="form.fechaFinal" label="Fecha Final" required></v-text-field>
             </div>
             <div>
-                <SelectUsuario/>
-            </div> 
-            <div>
                 <v-btn color="blue" v-on:click="guardar()">Crear</v-btn>
                 <v-btn color="warning" v-on:click="salir()" >Salir</v-btn>
             </div> 
@@ -26,7 +23,6 @@
 <script>
 //import Header from '@/components/Header.vue'
 //import Footer from '@/components/Footer.vue'
-import SelectUsuario from '@/components/SelectUsuario.vue';
 import axios from 'axios';
 export default {
     name:"Nuevo",
@@ -44,7 +40,6 @@ export default {
     components:{
         //Header,
         //Footer
-         SelectUsuario
     },
     methods:{
         guardar(){
